@@ -1,0 +1,18 @@
+/*login: huxxx990, shixx566
+date: 04/13/18
+name: Hanyu Hu, Xicun Shi
+id: 5272396, 5090878
+Extra credits: No*/
+
+The purpose of program:
+	To use Operating System's I/O and multithreading techniques to implement a vote counter program.
+
+What the program does:
+	The program read all leaf nodes' and aggregate the result in their parent. The graph data structure is based on the DAG.txt file. All leaf nodes' files exist in the input directory, meanwhile, these files are encrypted for security. The program will decrypt these files and save them into output directory. Output directory will create the directory based on the DAG.txt. The decrypted files are saved into each leaf directory of output directory. Then the program create number of threads based on how many directories are in the output directory. The non-leaf directory will contain the aggregated results from children. The root directory which is "Who_Win" will contain the folder that have the final results and winner after aggregation, and a log file that list all execution steps. 
+
+To compile and run the program:
+	The makefile have provided, so the program can be compiled by typing "make" in the terminal, then the three executable files would be created. And when you type "make clean", it will delete all the executabel files and output directory. To run the program, the format is like "./votecounter <DAG.txt> <input_dir> <output_dir>". The argument "DAG.txt" is in the input directory.
+
+Hanyu's work: Implement the read and write part to aggregate the results, implement the functions that build the directory structure and read leaf nodes from input directory and save into output directory
+Xicun's work: Wrote README, Makefile and documentation in the code.
+Worked together: Multithreading part and lock/unlock parts. Debugging and testing and fixing error.

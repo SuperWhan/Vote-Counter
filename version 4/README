@@ -1,0 +1,19 @@
+/*login: huxxx990, shixx566
+date: 04/13/18
+name: Hanyu Hu, Xicun Shi
+id: 5272396, 5090878
+Extra credits: No*/
+
+The purpose of program:
+	Use client and server to make votecounter could be communicated using protocol that we defined.
+
+What the program does:
+	In the program, the .req file will be passing into the code, and the cilent will read the .req file, and define the server IP and Server Port. which can connect to the server. The .req file will contain the Process we need to run, for example, the line in .req file "ADD_Vote County_1 County_1.votes". The client will read in this line and pass to server. Then in the server we will pass the .dag file and connect port, which we can get the diagram of each county or sub county. The server will also recieve the sentence that sent by client. as the example above, when the server recieve "ADD_Vote County_1 County_1.votes", it will add the votes for each candidates, and add them up to the County_1.
+	There are bunch of functions, ADD_Vote will send signal "AV" to server, Count_Vote will send signal "CV" to server etc. all the signal will send by client and recieve by server, analysis in the server, and send the result back to the client.
+
+To compile and run the program:
+	The makefile have provided, so the program can be compiled by typing "make" in the terminal, then the three executable files would be created. And when you type "make clean", it will delete all the executabel files and output directory. To run the client, the format is like "./client <req file> <Server IP> <Server Port>". for the srever, run like "./server <DAG file> <Server Port>"
+
+Hanyu's work: README, algorithmns, helper functions
+Xicun's work: server and client main part. try to connect them up.
+Worked together: Multithreading part and lock/unlock parts. Debugging and testing and fixing error.

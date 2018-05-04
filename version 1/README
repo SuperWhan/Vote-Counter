@@ -1,0 +1,27 @@
+/*login: huxxx990, shixx566 
+* date: 02/21/18
+* name: Hanyu Hu, Xicun Shi
+* id: 5272396, 5090878 */
+
+The purpose of the program:
+To understand Dependency Control flows in C programming. Our program is to count the votes of candidates in the election, and find who won the election.
+
+How to compile the program:
+We have already created the makefile, therefore, just type "make" in the terminal, it will automatically compile the program and create the executable file called votecounter.
+
+How to use the program from the shell(syntax):
+After compiling the programing by using "make", it will create an executable file called votecounter. Make sure that the executable file and input file are in the same directory, and then run the command "./votecounter input.txt". Meanwhile, the other executable file such as leafcounter, aggregate_votes and find_winner should also ensure that stay with the same directory.
+
+What exactly the program does:
+Our program will read and parse information from an input file and create the dependency structure which is similar to a tree. After the structure is completed and the information from input file assign to each node and region, we use fork and exec to execute the utilities. Once the utilities are executed, there are output file created for region and subregions. In the output file, it contains the individual votes and aggregate votes across all regions. Finally, the winner will display in the output file. 
+
+huxxx990 - Hanyu Hu
+shixx566 - Xicun Shi
+
+Individual contributions:
+Hanyu Hu: Implemented the function parseInputLine and most part of debug, and test. 
+Xicun Shi: Wrote README file, makefile and most documentation within code.
+Worked together: Implemented the function execNotes and final debugging including testing.
+
+Bugs:
+We are not finished whole stuff, since spent too much time on the first two function, and the innitial error in the makeargv.h. So when look into the exenode, we have no time to finished it, and just get some ideas from others' help. our output file is not contain the cnaiddates and the votes. to behonst we start too late, like only 4 days ahead, so that is too busy for us to finish. but the first two functions have been finished, you can test.
