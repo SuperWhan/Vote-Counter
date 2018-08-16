@@ -6,10 +6,10 @@ Find the winner from different regions votes. For example, Hennepin county, Minn
 There are four different voting methods, the version1,2 keeps all the voting files in one directory, and if it is leaf (the smallest unit of an area), call leaf_coutner, if it is parent node, call aggarate vote, if it is Who_Won, means that you reach the end of vote, call find_winner to find the winner at this voting.The version3 are creating thread to synchronize the vote,  and write them into different directory. The version4, are creating server and client to vote at different computer clients, also with thread to synchronize the vote. 
 
 # completion:
--[] version 1
+-[ ] version 1
 -[x] version 2
 -[x] version 3
--[] version 4
+-[ ] version 4
 
 
 # Applied skills:
